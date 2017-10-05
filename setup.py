@@ -34,6 +34,7 @@ def get_extension():
 
     for d in dirs:
         search_dirs = [
+            '/usr/include/pcap/',
             os.path.join(d, 'local', 'include'),
             os.path.join(d, 'usr', 'include'),
             os.path.join(d, 'include'),
