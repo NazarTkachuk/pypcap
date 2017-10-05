@@ -262,7 +262,7 @@ cdef class pcap:
 
     def setdirection(self, direction):
         """Set capture direction."""
-        return pcap_ex_setdirection(self.__pcap, direction) == 0
+        return pcap_ex_setdirection(self.__pcap, direction)
 
     def setnonblock(self, nonblock=True):
         """Set non-blocking capture mode."""
